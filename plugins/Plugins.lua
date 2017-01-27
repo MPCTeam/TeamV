@@ -219,11 +219,12 @@ return {
           "plug ? : reloads all plugins." },
           },
   patterns = {
-    "^!plugins$",
-    "^[Pp]lx? (-) ([%w_%.%-]+)",
-    "^[Pp]lug? (+) ([%w_%.%-]+) (chat)",
-    "^[Pp]lx? (+) ([%w_%.%-]+)",
-    "^[Pp]lug? (-) ([%w_%.%-]+) (chat)" },
+    "^[!/#](plugins)$",
+    "^[!/#]pl (+) ([%w_%.%-]+)$",
+    "^[!/#]pl (-) ([%w_%.%-]+)$",
+    "^[!/#]pl (+) ([%w_%.%-]+) (gp)",
+    "^[!/#]pl (-) ([%w_%.%-]+) (gp)",
+	},
   run = run,
   moderated = true, -- set to moderator mode
   --privileged = true
